@@ -11,8 +11,8 @@ public class WebFormPage extends BasePage {
 
     public By header = By.xpath("//h1[text()='Web form']");
     public By textInputLocator = By.xpath("//input[@name='my-text']");
-    public By textAreaLocator = By.xpath("//input[@name='my-textarea']");
-    public By passwordLocator = By.id("//input[@name='my-password']");
+    public By textAreaLocator = By.xpath("//textarea[@name='my-textarea']");
+    public By passwordLocator = By.xpath("//input[@name='my-password']");
     //public static final String checked = "checked";
 
     public static final String CHECK_BOX_INPUT_XPATH = "//input[@type='checkbox'][following-sibling::text()[contains(., '%s')]]";
