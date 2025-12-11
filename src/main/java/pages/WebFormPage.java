@@ -15,7 +15,7 @@ public class WebFormPage extends BasePage {
     public By passwordLocator = By.xpath("//input[@name='my-password']");
     //public static final String checked = "checked";
 
-    public static final String CHECK_BOX_INPUT_XPATH =  "//input[@type='checkbox'][following-sibling::label[contains(text(), '%s')]]";
+    public static final String CHECK_BOX_INPUT_XPATH = "//input[@type='checkbox'][following-sibling::text()[contains(., '%s')]]";
 
 
     public boolean isPageOpen(){
